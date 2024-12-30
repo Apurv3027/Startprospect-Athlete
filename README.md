@@ -1,4 +1,4 @@
-# starprospect
+# Starprospect
 
 A new Flutter project.
 
