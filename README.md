@@ -1,4 +1,4 @@
-# Starprospect
+# Starprospect Athlete App
 
 A new Flutter project.
 
