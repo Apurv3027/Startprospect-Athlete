@@ -27,7 +27,8 @@ class _SignUpAsScreenState extends State<SignUpAsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: LayoutBuilder(builder: (BuildContext context, BoxConstraints viewportConstraints) {
+      body: LayoutBuilder(
+          builder: (BuildContext context, BoxConstraints viewportConstraints) {
         return SingleChildScrollView(
           child: ConstrainedBox(
             constraints: BoxConstraints(
@@ -44,126 +45,117 @@ class _SignUpAsScreenState extends State<SignUpAsScreen> {
               )),
               child: IntrinsicHeight(
                 child: Column(
-                  children: <Widget>[
+                  children: [
                     Container(
-                        width: 375,
-                        padding: const EdgeInsets.symmetric(horizontal: 60),
-                        height: 210,
-                        child: Image.asset('assets/image/logo.png')),
+                      width: 375,
+                      padding: const EdgeInsets.symmetric(horizontal: 60),
+                      height: 210,
+                      child: Image.asset(
+                        'assets/image/logo.png',
+                      ),
+                    ),
                     Expanded(
                       child: Container(
-                          decoration: const BoxDecoration(
-                              color: Colors.white,
-                              borderRadius:
-                                  BorderRadius.only(topLeft: Radius.circular(20.0), topRight: Radius.circular(20.0))),
-                          child: Padding(
-                            padding: const EdgeInsets.only(left: 15, right: 15),
-                            child: Column(
-                              mainAxisSize: MainAxisSize.max,
-                              crossAxisAlignment: CrossAxisAlignment.stretch,
-                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                              children: [
-                                const SizedBox(
-                                  height: 15,
+                        decoration: const BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.only(
+                            topLeft: Radius.circular(20.0),
+                            topRight: Radius.circular(20.0),
+                          ),
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsets.only(left: 15, right: 15),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            crossAxisAlignment: CrossAxisAlignment.stretch,
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              const SizedBox(
+                                height: 15,
+                              ),
+                              Text(
+                                CT.whoAreYou,
+                                style: TU.mainStyle.copyWith(
+                                  fontWeight: FontWeight.bold,
                                 ),
-                                Text(
-                                  CT.whoAreYou,
-                                  style: TU.mainStyle.copyWith(fontWeight: FontWeight.bold),
-                                ),
-                                const SizedBox(
-                                  height: 15,
-                                ),
-                                Text(
-                                  CT.whoAreYouTxt,
-                                  style: TU.disStyle,
-                                ),
-                                const SizedBox(
-                                  height: 15,
-                                ),
-                                //DropDownButton
-                                Stack(
-                                  children: [
-                                    CommonDropDownButton(
-                                      value: dropdownvalue,
-                                      isExpanded: true,
-                                      icon: const Icon(
-                                        Icons.arrow_drop_down,
-                                        color: Color(0xff333333),
-                                      ),
-                                      style: TU.dropDown,
-                                      onChanged: (String? newValue) {
-                                        setState(() {
-                                          dropdownvalue = newValue;
-                                        });
-                                      },
-                                      items: <String>['Athletes', 'Cricket', 'Swimming', 'Yoga']
-                                          .map<DropdownMenuItem<String>>((String value) {
-                                        return DropdownMenuItem<String>(
-                                          value: value,
-                                          child: Padding(
-                                            padding: const EdgeInsets.only(left: 30.0),
-                                            child: Text(value),
-                                          ),
-                                        );
-                                      }).toList(),
+                              ),
+                              const SizedBox(
+                                height: 15,
+                              ),
+                              Text(
+                                CT.whoAreYouTxt,
+                                style: TU.disStyle,
+                              ),
+                              const SizedBox(
+                                height: 15,
+                              ),
+                              //DropDownButton
+                              Stack(
+                                children: [
+                                  CommonDropDownButton(
+                                    value: dropdownvalue,
+                                    isExpanded: true,
+                                    icon: const Icon(
+                                      Icons.arrow_drop_down,
+                                      color: Color(0xff333333),
                                     ),
-                                    // DropdownButtonFormField(
-                                    //   decoration: InputDecoration(
-                                    //     contentPadding: const EdgeInsets.fromLTRB(15, 15, 15, 15),
-                                    //     isDense: true,
-                                    //     border: OutlineInputBorder(
-                                    //       borderRadius: BorderRadius.circular(12),
-                                    //     ),
-                                    //   ),
-                                    //   isExpanded: true,
-                                    //   value: dropdownvalue,
-                                    //   icon: const Icon(
-                                    //     Icons.arrow_drop_down,
-                                    //     color: Color(0xff333333),
-                                    //   ),
-                                    //   iconSize: 25,
-                                    //   elevation: 8,
-                                    //   style: TU.dropDown,
-                                    //   items: <String>['Athletes', 'Cricket', 'Swimming', 'Yoga']
-                                    //       .map<DropdownMenuItem<String>>((String value) {
-                                    //     return DropdownMenuItem<String>(
-                                    //       value: value,
-                                    //       child: Padding(
-                                    //         padding: const EdgeInsets.only(left: 30.0),
-                                    //         child: Text(value),
-                                    //       ),
-                                    //     );
-                                    //   }).toList(),
-                                    //   onChanged: (String? newValue) {
-                                    //     setState(() {
-                                    //       dropdownvalue = newValue;
-                                    //     });
-                                    //   },
-                                    // ),
-                                    Container(
-                                        margin: const EdgeInsets.symmetric(vertical: 15),
-                                        padding: const EdgeInsets.only(left: 10),
-                                        child: const Icon(Icons.person_outline_rounded)),
-                                  ],
-                                ),
-                                const SizedBox(
-                                  height: 15,
-                                ),
-                                Padding(
-                                  padding: const EdgeInsets.only(bottom: 331),
-                                  child: CommonButton(
-                                    txt: CT.continueBtn,
-                                    onPressed: () {
-                                      Get.to(const SignUpScreen());
+                                    style: TU.dropDown,
+                                    onChanged: (String? newValue) {
+                                      setState(() {
+                                        dropdownvalue = newValue;
+                                      });
                                     },
+                                    items: <String>[
+                                      'Athletes',
+                                      'Business',
+                                      'Coach',
+                                      'Parent'
+                                    ].map<DropdownMenuItem<String>>(
+                                        (String value) {
+                                      return DropdownMenuItem<String>(
+                                        value: value,
+                                        child: Container(
+                                          child: Row(
+                                            children: [
+                                              Image.asset(
+                                                  value == 'Athletes'
+                                                      ? 'assets/image/Athletes.png'
+                                                      : value == 'Business'
+                                                      ? 'assets/image/Business.png'
+                                                      : value == 'Coach'
+                                                      ? 'assets/image/Coach.png'
+                                                      : 'assets/image/Parent.png',
+                                                height: 20,
+                                              ),
+                                              SizedBox(width: 10),
+                                              Text(value),
+                                            ],
+                                          ),
+                                        ),
+                                      );
+                                    }).toList(),
                                   ),
+                                ],
+                              ),
+                              const SizedBox(
+                                height: 15,
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.only(bottom: 331),
+                                child: CommonButton(
+                                  txt: CT.continueBtn,
+                                  onPressed: () {
+                                    Get.to(const SignUpScreen());
+                                  },
                                 ),
-                                const SizedBox(
-                                  height: 15,
-                                ),
-                              ],
-                            ),
-                          )),
+                              ),
+                              const SizedBox(
+                                height: 15,
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
                     )
                   ],
                 ),

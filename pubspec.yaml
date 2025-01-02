@@ -43,6 +43,7 @@ dependencies:
   tab_indicator_styler: ^2.0.0
   chips_choice: ^2.1.1
   chip_list: ^2.3.3+8
+  choice: ^2.3.2
 
 dev_dependencies:
   flutter_test:
