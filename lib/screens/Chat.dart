@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:starprospect/utility/Colors.dart';
-import 'package:starprospect/utility/CommonAppBar.dart';
 import 'package:starprospect/utility/Text.dart';
 import 'package:starprospect/utility/TextStyle.dart';
 

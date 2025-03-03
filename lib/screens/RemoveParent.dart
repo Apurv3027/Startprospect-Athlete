@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:starprospect/screens/AccountSettings.dart';
 import 'package:starprospect/screens/Invitation.dart';
 import 'package:starprospect/utility/TextStyle.dart';
 import '../utility/CommonAppBar.dart';

@@ -15,7 +15,7 @@ class _MyProfileDealsState extends State<MyProfileDeals>{
 
   TextEditingController amountController = TextEditingController();
 
-  int? _value = 1;
+  int? value = 1;
 
   bool _valueCheck = false;
 

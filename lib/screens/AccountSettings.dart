@@ -8,8 +8,6 @@ import 'package:starprospect/screens/MyReviews.dart';
 import 'package:starprospect/screens/Parent.dart';
 import 'package:starprospect/screens/SocialMediaScreen.dart';
 import 'package:starprospect/screens/ThankyouMessage.dart';
-import 'package:starprospect/utility/Colors.dart';
-import 'package:starprospect/utility/CommonButton.dart';
 import 'package:starprospect/utility/Text.dart';
 import 'package:starprospect/utility/TextStyle.dart';
 import '../utility/CommonAppBar.dart';

@@ -4,7 +4,6 @@ import 'package:starprospect/screens/ProfileViewAbout.dart';
 import 'package:starprospect/screens/ProfileViewDeals.dart';
 import 'package:starprospect/screens/ProfilrNewsfeedScreen.dart';
 import 'package:starprospect/utility/Colors.dart';
-import 'package:starprospect/utility/CommonAppBar.dart';
 import 'package:starprospect/utility/TextStyle.dart';
 
 class ProfileView extends StatefulWidget {
@@ -16,7 +15,7 @@ class ProfileView extends StatefulWidget {
 
 class _ProfileViewState extends State<ProfileView> with SingleTickerProviderStateMixin {
 
-  int _currentIndex = 0;
+  int currentIndex = 0;
   late TabController _tabProfileController;
 
   @override

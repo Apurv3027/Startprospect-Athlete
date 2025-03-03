@@ -3,7 +3,6 @@ import 'package:get/get.dart';
 import 'package:starprospect/models/Like.dart';
 import 'package:starprospect/screens/Favorite.dart';
 import 'package:starprospect/utility/Colors.dart';
-import 'package:starprospect/utility/CommonCard.dart';
 import 'package:starprospect/utility/Text.dart';
 import 'package:starprospect/utility/TextStyle.dart';
 

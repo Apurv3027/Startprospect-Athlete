@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:starprospect/screens/LoginScreen.dart';
 import 'package:starprospect/screens/MyProfileNewsFeedDetails.dart';
 
 class MyProfileNewsFeed extends StatefulWidget {

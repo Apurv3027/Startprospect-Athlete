@@ -1,5 +1,4 @@
 import 'package:chip_list/chip_list.dart';
-import 'package:chips_choice/chips_choice.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:starprospect/utility/TextStyle.dart';
@@ -13,7 +12,7 @@ class ProfileViewDeals extends StatefulWidget {
 
 class _ProfileViewDealsState extends State<ProfileViewDeals>{
 
-  int? _value = 1;
+  int? value = 1;
 
   // single choice value
   int tag = 3;

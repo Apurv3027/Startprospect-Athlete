@@ -18,7 +18,7 @@ class _CollegesTeamsState extends State<CollegesTeams>{
   final TextEditingController _searchViewController = TextEditingController();
 
   // show the btn or not
-  bool _isShow = true;
+  bool isShow = true;
 
   @override
   Widget build(BuildContext context) {

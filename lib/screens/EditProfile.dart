@@ -65,8 +65,8 @@ class _EditProfileState extends State<EditProfile> {
   TextEditingController heightController = TextEditingController();
   TextEditingController weightController = TextEditingController();
 
-  bool _isObscure = false;
-  bool _isObscure2 = false;
+  bool isObscure = false;
+  bool isObscure2 = false;
 
   @override
   Widget build(BuildContext context) {

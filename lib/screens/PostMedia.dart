@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:starprospect/screens/HomePage.dart';
 import 'package:starprospect/utility/CommonAppBar.dart';
-import 'package:starprospect/utility/CommonTextField.dart';
-import 'package:starprospect/utility/TextStyle.dart';
 
 class PostMedia extends StatefulWidget {
   const PostMedia({Key? key}) : super(key: key);

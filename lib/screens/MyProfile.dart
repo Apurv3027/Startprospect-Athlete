@@ -15,7 +15,7 @@ class MyProfile extends StatefulWidget {
 
 class _MyProfileState extends State<MyProfile> with SingleTickerProviderStateMixin {
 
-  int _currentIndex = 0;
+  int currentIndex = 0;
   late TabController _tabProfileController;
 
   @override
